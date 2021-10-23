@@ -1,7 +1,7 @@
 name: main
 on:
   schedule:
-    - cron: "* * * * *" # runs at 12:00 UTC everyday 0 12 * * *
+    - cron: "0 12 * * *" # runs at 12:00 UTC everyday
 jobs:
   run-commit-bot:
     runs-on: ubuntu-latest
