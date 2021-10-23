@@ -17,4 +17,4 @@ CommitBot is a system to hack your Github contributions graph and look way more 
 # Usage
 Interested in using CommitBot to boost your Github contribution graph? Simply fork this repository and configure a repository secret named `TOKEN` containing your personal Github API token.
 
-Built for [HackGT 8](https://hack.gt) :heart
+Built for [HackGT 8](https://hack.gt) :heart:
