@@ -1,4 +1,4 @@
-name: mainline
+name: main
 on:
   schedule:
     - cron: "0 12 * * *" # runs at 12:00 UTC everyday
