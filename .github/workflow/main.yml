@@ -1,8 +1,7 @@
-name: main
+name: mainline
 on:
   schedule:
     - cron: "0 12 * * *" # runs at 12:00 UTC everyday
-
 jobs:
   run-commit-bot:
     runs-on: ubuntu-latest
@@ -20,7 +19,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: create env file
+        with: 
+          envkey_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          file_name: .env
+
       - name: execute main script
-        env: 
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/main.py
